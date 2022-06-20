@@ -62,7 +62,16 @@ function createListElement(text) {
 }
 
 function createMap() {
-    const map = new google.maps.Map(
-        document.getElementById('map'),
-        {center: {lat: 37.422, lng: -122.084}, zoom: 16});
+    const myLatLng = { lat: 39.937282, lng: 116.403187 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    scale: 4,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Johns Hopkins University!",
+  });
 }
