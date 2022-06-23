@@ -49,19 +49,29 @@ async function getServerStats() {
     const statsListElement = document.getElementById('server-stats-container');
     statsListElement.innerHTML = '';
   
+    const index = Math.floor(Math.random() * stats.length);
     statsListElement.appendChild(
-        createListElement(stats[Math.floor(Math.random() * stats.length)]));
+        createListElement(stats[index]));
   }
   
-  /** Creates an <li> element containing text. */
-  function createListElement(text) {
+/** Creates an <li> element containing text. */
+function createListElement(text) {
     const liElement = document.createElement('li');
     liElement.innerText = text;
     return liElement;
-  }
+}
 
-  function createMap() {
-    const map = new google.maps.Map(
-        document.getElementById('map'),
-        {center: {lat: 37.422, lng: -122.084}, zoom: 16});
-  }
+function createMap() {
+    const myLatLng = { lat: 39.937282, lng: 116.403187 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    scale: 4,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Johns Hopkins University!",
+  });
+}

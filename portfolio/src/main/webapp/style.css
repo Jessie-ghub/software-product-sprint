@@ -81,6 +81,8 @@ a {
 .link {
   font-weight: bold;
   color: red;
+  text-align: center;
+  padding: 0 0 0 35em;
   /* &:focus,
   &:hover {color: darken($red, 10%);}
   &:active {color: lighten($red, 5%);} */
@@ -95,6 +97,7 @@ nav h1 {
 nav h1 a {color: rgb(213, 105, 123);}
 .nav-ul {
   display: flex;
+  padding: 15px;
 }
 header li {width: 40%;}
 header li:not(:first-child) {margin-left: 6%;}
@@ -241,13 +244,13 @@ hr {
 }
 
 .column-1 {
-  float: left;
-  width: 40%;
+    float: left;
+    width: 40%;
 }
-
+  
 .column-2 {
-  float: left;
-  width: 60%;
+    float: left;
+    width: 60%;
 }
 
 
@@ -301,4 +304,16 @@ div.desc {
     border: thin solid black;
     height: 500px;
     width: 500px;
+}
+
+.button {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 18px;
   }
