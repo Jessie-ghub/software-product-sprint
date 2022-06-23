@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGqngUWE9r2xs-34mJ0b93xVwqSXzv14"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-  <body style="background-color:rgb(255, 255, 255);">
+  <body onload="createMap();" style="background-color:rgb(255, 255, 255);">
     <div class="line"></div>
 <div class="wrapper">
   <header role="banner">
@@ -28,7 +29,7 @@
     <hr />
     <div class="profile-row" role="section">
       
-    <h3>me me me me me</h3>
+    <h3>me</h3>
       
     <div class="gallery">
       <a target="_blank" href="./images/gallary/animals/panda.JPG">
@@ -99,73 +100,13 @@
     </div>
     <section class="sec-events" role="section">
       <hr />
-      <h2>Upcomming events</h2>
-      <article>
-        <h1>Tire Technology Expo</h1>
-        <p>Tire Technology Expo has grown in strength and stature every year since it was started in Europe 15 years ago. Visitors and exhibitors to the conference and exhibition staged in February 2014 universally praised it as the 'world's leading tire design and tire manufacturing event', noting in particular the outstanding quality of the conference papers and speakers, and the comprehensive extent of machinery manufacturers and suppliers who exhibited at the event.</p>
-        <a class="link" href="#">more...</a>
-      </article>
-      <article>
-        <h1>Meteorology World Expo</h1>
-        <p>Meteorological Technology World Expo is a truly international exhibition of the very latest climate, weather and hydro - meteorological forecasting, measurement and analysis technologies and service providers for a global community of key decision makers within the aviation industry, shipping companies, marine / port installations, airports, military operations, off-shore exploration companies, wind farm operators, met offices, agriculture operations and research institutes.</p>
-        <a class="link" href="#">more...</a>
-      </article>
-      <article>
-        <h1>Wearable Tech Expo</h1>
-        <p>See live demos, listen to case studies, speak with Wearable Tech Experts The first Wearable Tech Expo in Tokyo 2014. Key players from Japan, America and Europe announced their new products and attracted attention from all over the world. The next Wearable Tech Expo in Tokyo will be doubling in size and include Robotics and IoT. The main players in the wearable industry, human factor engineers, brain scientists, media providers and creators will discuss the future of wearable technology! </p>
-        <a class="link" href="#">more...</a>
-      </article>
-      <article>
-        <h1>Space Tech Expo</h1>
-        <p>Space Tech Expo is the West Coast's premier B2B space event for spacecraft, satellite, launch vehicle and space-related technologies. Taking place in Long Beach, the Space Tech Expo exhibition and conference brings together global decision-makers involved in the design, build and testing of spacecraft, satellite, launch vehicle and space-related technologies. Leading the West Coast space and satellite industry, Space Tech Expo is where end-users connect with solution providers.</p>
-        <a class="link" href="#">more...</a>
-      </article>
+      
     </section>
-    <section class="sec-projects" role="section">
-      <hr />
-      <h1>Quote of the Day</h1>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </section>
-    <section class="sec-partners" role="section">
-      <hr />
-      <h1>Our Partners</h1>
-      <div class="row">
-        <div class="logo-container">
-          <img src="https://i.imgur.com/oSriTuP.png" alt="Google logo" />
-        </div>
-        <div class="logo-container">
-          <img src="https://i.imgur.com/kRgvevC.png" alt="Apple logo" />
-        </div>
-        <div class="logo-container">
-          <img src="https://i.imgur.com/ZZjeIP3.png" alt="Wii logo" />
-        </div>
-        <div class="logo-container">
-          <img src="https://i.imgur.com/536rtCW.png" alt="Valve logo" />
-        </div>
-        <div class="logo-container">
-          <img src="https://i.imgur.com/VTq1c9p.png" alt="Adithya Institute of Technology logo" />
-        </div>
-        <div class="logo-container">
-          <img src="https://i.imgur.com/GdYoyxo.png" alt="Intel logo" />
-        </div>
-      </div>
-    </section>
+    <h1>Hello Google Maps</h1>
+    <div id="map"></div>
+    <p>This page shows a Google Map!</p>
   </main>
 </div>
-<footer>
-  <nav role="navigation">
-    <ul class="nav-ul">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Technologies</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-  </nav>
-  <p class="copy">&copy; Alex Devero Design 2014</p>
-</footer>
 <div class="line"></div>
     <div id="content">
       <h1>My Portfolio</h1>
